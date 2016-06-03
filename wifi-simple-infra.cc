@@ -97,7 +97,7 @@ int main (int argc, char *argv[])
   std::string phyMode ("DsssRate1Mbps");
   double rss = -80;  // -dBm
   uint32_t packetSize = 1000; // bytes
-  uint32_t numPackets = 1;
+  uint32_t numPackets = 2;
   double interval = 1.0; // seconds
   bool verbose = false;
 
@@ -123,7 +123,7 @@ int main (int argc, char *argv[])
                       StringValue (phyMode));
 
   NodeContainer c;
-  c.Create (2);
+  c.Create (3);
 
   // The below set of helpers will help us to put together the wifi NICs we want
   WifiHelper wifi;
